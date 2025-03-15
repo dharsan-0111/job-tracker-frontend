@@ -1,0 +1,91 @@
+/* Import a clean Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 350px;
+    padding: 20px;
+    background: linear-gradient(135deg, #1F1D36, #3F3351);
+    color: #F1F1F1;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #E0E0E0;
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+    color: #B0B0B0;
+    margin-bottom: 15px;
+}
+
+/* Form Styling */
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    /* color: #FFF; */
+    font-size: 14px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #B0B0B0;
+}
+
+select {
+    cursor: pointer;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#saveJob {
+    background: #6A57D5;
+    color: #FFF;
+}
+
+#saveJob:hover {
+    background: #5746B5;
+}
+
+#logoutButton {
+    background: #FF3D68;
+    color: white;
+}
+
+#logoutButton:hover {
+    background: #D8325B;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Job Tracker Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Tracks job applications and logs them to Google Sheets.",
+  "permissions": ["scripting", "storage", "activeTab", "tabs"],
+  "host_permissions": ["https://*/*", "http://*/*", "<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["content.mjs"],
+      "module": true,
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.svg"
+  }
+}
